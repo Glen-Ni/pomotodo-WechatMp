@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<text class="div1">pages/test/test.wxml</text>
+<view>div</view>
+<text>span</text>
+
