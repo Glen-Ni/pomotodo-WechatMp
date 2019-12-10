@@ -3,3 +3,23 @@
 <view>div</view>
 <text>span</text>
 
+<text>相当于v-for v-if</text>
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+<button bindtap="pushItem">+1s</button>
+<view wx:for="{{arr}}" wx:key="index" wx:for-item="j">{{index}},{{j}}</view>
+-------------------------------
+<button bindtap="reverseStr">反转</button>
+
+<view>{{str}}</view>
+
+-------------------------------
+<button bindtap="changeObjText">obj+1</button>
+<view>{{obj.id}},{{obj.text}}</view>
+
+-------------------------------
+<button bindtap="toggleColor">toggle</button>
+<view class="{{flag?'active':''}}">我是小僵尸</view>
+
