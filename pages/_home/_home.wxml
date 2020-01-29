@@ -1,4 +1,4 @@
 <!--pages/_home/_home.wxml-->
 <text>pages/_home/_home.wxml</text>
 <view>rua</view>
-<g-button></g-button>
+<g-button text="创建任务" size="mini" type="default"></g-button>
