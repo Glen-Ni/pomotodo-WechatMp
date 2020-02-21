@@ -1,3 +1,19 @@
 /* components/_button/_button.wxss */
-button::after{border: 1px solid #000}
-.button-hover {opacity: 0.9}
+
+/* button::after{border: 10px solid #000} */
+
+.button-hover {
+  opacity: 0.9;
+  color: red;
+}
+
+.tomato-button{
+  width: 300rpx;
+  height: 90rpx;
+  border:1rpx solid red;
+  color: red;
+  margin-left:10rpx;
+}
+.tomato-button .mini{
+  width:200rpx
+}
