@@ -7,8 +7,10 @@ button::after{border: 0 solid #000}
 }
 
 .tomato-button{
-  width: 300rpx;
+
+  width: 540rpx;
   height: 80rpx;
-  line-height: 80rpx;
-  font-size: 16px;
+  border-radius:16px;
+  color:#fff;
+  font-size:26rpx;
 }
