@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "g-button":"../../components/_button/_button"
+    "g-button": "../../components/_button/_button",
+    "g-clock": "../../components/_clock/_clock",
+    "g-confirm": "../../components/_confirm/_confirm"
   }
 }
