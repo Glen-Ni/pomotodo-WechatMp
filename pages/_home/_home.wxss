@@ -1,8 +1,3 @@
-/* pages/_home/_home.wxss */
-@import '../../components/_button/_button.wxss';
-@import '../../components/_clock/_clock.wxss';
-@import '../../components/_confirm/_confirm.wxss';
-
 
 .home-contianer {
   height:100vh;
@@ -33,4 +28,27 @@
   top:580px;
   left: 50%;
   transform: translateX(-50%)
+}
+
+.todoList{
+  padding: 13rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.todoList .item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0rpx 2rpx 6rpx 0rpx rgba(0,0,0,0.10);
+  border-radius: 10rpx;
+  padding: 15rpx 20rpx;
+  margin: 10rpx 0;
+}
+
+.todoList .item .select{
+  border-radius: 50%;
+  border: 4rpx solid #FE996F;
+  margin-right: 10px;
+  width: 20rpx;
+  height: 20rpx;
 }

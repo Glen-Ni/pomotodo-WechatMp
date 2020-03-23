@@ -14,17 +14,18 @@ Component({
     }
   },
   data: {
-    value:''
+    value: ''
   },
   methods: {
     confirm() {
-      this.triggerEvent('confirm',this.data.value)
+      this.triggerEvent('confirm', this.data.value)
     },
     cancel() {
-      this.triggerEvent('cancel',this.data.value)
+      this.setData({visible: false})
     },
     watchValue(event) {
-      this.data.value=event.detail.value
+      console.log(event.detail);
+      this.data.value = event.detail.value
     }
   }
 })
