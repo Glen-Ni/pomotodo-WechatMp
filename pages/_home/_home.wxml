@@ -1,6 +1,6 @@
 <view class="home-contianer">
   <scroll-view class="todoList" scroll-y="true">
-    <view class="item" wx:for="{{lists}}" wx:for-index="index" wx:key="{{todo.id}}" wx:for-item="todo">
+    <view class="item" wx:for="{{lists}}" wx:key="id" wx:for-item="todo">
       <view class="select"></view>
       <text>index{{index}} key{{key}}111{{todo.id}}{{todo.text}}</text>
     </view>
