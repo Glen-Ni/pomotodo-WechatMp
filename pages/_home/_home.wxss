@@ -1,14 +1,13 @@
-
 .home-contianer {
-  height:100vh;
+  height: 100vh;
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.tomato-wrapper{
-  flex:1;
+.tomato-wrapper {
+  flex: 1;
   margin-top: 66rpx;
   padding: 0 28rpx;
 }
@@ -16,39 +15,46 @@
 .tomato-wrapper .tomato {
   background: #eef7f6;
   border-radius: 2rpx;
-  box-shadow: 0 2px 8px 0px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 8px 0px rgba(0, 0, 0, 0.1);
   height: 473rpx;
   display: flex;
-  flex-direction:column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .createButton {
   position: absolute;
-  top:580px;
+  top: 580px;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
-.todoList{
+.todoList {
   padding: 13rpx 30rpx;
   box-sizing: border-box;
+  font-size: 28rpx;
 }
 
 .todoList .item {
   display: flex;
   align-items: center;
   background: #fff;
-  box-shadow: 0rpx 2rpx 6rpx 0rpx rgba(0,0,0,0.10);
+  box-shadow: 0rpx 2rpx 6rpx 0rpx rgba(0, 0, 0, 0.1);
   border-radius: 10rpx;
-  padding: 15rpx 20rpx;
+  padding: 15rpx 30rpx;
   margin: 10rpx 0;
 }
 
-.todoList .item .select{
+.todoList .item .select {
   border-radius: 50%;
-  border: 4rpx solid #FE996F;
+  border: 5rpx solid #fe996f;
   margin-right: 10px;
-  width: 20rpx;
-  height: 20rpx;
+  width: 28rpx;
+  height: 28rpx;
+  
+}
+
+.todoList .item .select.active {
+  background: #fe996f;
+  transition: all 1s ease-out;
 }
