@@ -16,9 +16,9 @@ Page({
   },
   cancel(event) {
     console.log(event.detail);
-    this.data.visible=false
+    this.setData({visible:true})
   },
-  addTodo(event) {
-    this.data.visible=true
+  showConfirm(event) {
+    this.setData({visible:true})
   }
 })

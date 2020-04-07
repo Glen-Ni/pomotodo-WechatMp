@@ -46,15 +46,27 @@
 }
 
 .todoList .item .select {
+  position: relative;
   border-radius: 50%;
-  border: 5rpx solid #fe996f;
+  border: 4rpx solid #fe996f;
   margin-right: 10px;
   width: 28rpx;
   height: 28rpx;
-  
 }
 
-.todoList .item .select.active {
+/* .todoList .item .select.active {
   background: #fe996f;
   transition: all 1s ease-out;
+} */
+
+.todoList .item .select.active:before{
+  position: absolute;
+  content:"";
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fe996f;
 }
