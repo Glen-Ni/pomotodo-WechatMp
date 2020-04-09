@@ -24,7 +24,7 @@ Component({
       this.setData({visible: false})
     },
     watchValue(event) {
-      console.log(event.detail);
+      // console.log(event.detail);
       this.data.value = event.detail.value
     }
   }

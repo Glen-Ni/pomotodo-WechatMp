@@ -2,7 +2,7 @@
   <scroll-view class="todoList" scroll-y="true">
     <view class="item" wx:for="{{lists}}" wx:key="id" wx:for-item="todo">
       <view class="select {{todo.finished && 'active'}}"></view>
-      <text>index{{index}} key{{todo.finished?'finished':'not'}} 111 {{todo.id}}{{todo.text}}</text>
+      <text>id:{{todo.id}}  text:{{todo.text}}</text>
     </view>
   </scroll-view>
   <g-button text="创建任务" type="change" bindtap="showConfirm"></g-button>
@@ -11,5 +11,5 @@
       <g-clock text="点击开始番茄"></g-clock>
     </view>
   </view>
-  <g-confirm visible="{{visible}}" placeholder="完成了啥？" bindconfirm="confirm" bindcancel="cancel"></g-confirm>
+  <g-confirm visible="{{visible}}" placeholder="请输入任务" bindconfirm="confirm" bindcancel="cancel"></g-confirm>
 </view>

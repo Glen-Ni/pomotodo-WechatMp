@@ -12,7 +12,11 @@ Page({
   },
   confirm(event) {
     console.log(event.detail);
-    this.data.visible=false
+    let todo = [{ id: this.data.lists.length + 1, text: event.detail, finished: false }]
+    let newList = todo.concat(this.data.lists)
+    console.log(newList);
+    this.setData({lists:newList})
+    this.setData({visible:false})
   },
   cancel(event) {
     console.log(event.detail);
