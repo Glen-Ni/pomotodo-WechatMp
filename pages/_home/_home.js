@@ -24,5 +24,11 @@ Page({
   },
   showConfirm(event) {
     this.setData({visible:true})
+  },
+  toggleComplete(event){
+    let index = event.target.dataset.index
+    console.log(index)
+    let isFinished = this.data.lists[index].finished
+    console.log(isFinished)
   }
 })

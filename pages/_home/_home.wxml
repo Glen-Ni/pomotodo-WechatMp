@@ -1,6 +1,6 @@
 <view class="home-contianer">
   <scroll-view class="todoList" scroll-y="true">
-    <view class="item" wx:for="{{lists}}" wx:key="id" wx:for-item="todo">
+    <view class="item" wx:for="{{lists}}" wx:key="id" wx:for-item="todo" bindtap="toggleComplete" data-index="{{index}}">
       <view class="select {{todo.finished && 'active'}}"></view>
       <text>id:{{todo.id}}  text:{{todo.text}}</text>
     </view>
