@@ -10,6 +10,7 @@ Page({
     ],
     visible: false
   },
+
   confirm(event) {
     console.log(event.detail);
     let todo = [{ id: this.data.lists.length + 1, text: event.detail, finished: false }]
@@ -26,9 +27,14 @@ Page({
     this.setData({visible:true})
   },
   toggleComplete(event){
-    let index = event.target.dataset.index
+    let index = event.currentTarget.dataset.index
     console.log(index)
-    let isFinished = this.data.lists[index].finished
-    console.log(isFinished)
+    this.data.lists[index].finished = !this.data.lists[index].finished
+    this.setData({lists: this.data.lists})
+  },
+  destoryTodo(event){
+    let index = event.currentTarget.dataset.index
+    this.data.list
   }
+
 })
