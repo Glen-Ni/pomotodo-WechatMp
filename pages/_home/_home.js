@@ -7,6 +7,7 @@ Page({
       {id:4,text:"今天干完工作4" ,finished: true},
       {id:5,text:"今天干完工作5" ,finished: true},
       {id:6,text:"今天干完工作6" ,finished: true},
+      {id:7,text:"今天干完工作6" ,finished: true}
     ],
     visible: false
   },
@@ -34,7 +35,7 @@ Page({
   },
   destoryTodo(event){
     let index = event.currentTarget.dataset.index
-    this.data.list
+    console.log(this.data.list,index)
   }
 
 })
