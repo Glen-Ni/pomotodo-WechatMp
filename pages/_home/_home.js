@@ -35,7 +35,8 @@ Page({
   },
   destoryTodo(event){
     let index = event.currentTarget.dataset.index
-    console.log(this.data.list,index)
+    this.data.lists[index].finished = false
+    this.setData({ lists: this.data.lists })
   }
 
 })
