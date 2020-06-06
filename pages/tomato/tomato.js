@@ -1,60 +1,24 @@
 // pages/tomato/tomato.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    time: 1500,
+    leftTime:0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-
+    this.changeTime()
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  
+  changeTime() {
+    let n = Math.floor(this.data.time/60)
+    let s = Math.floor(this.data.time%60)
+    s = this.prefixInteger(s,2)
+    n = this.prefixInteger(n, 2)
+    this.setData({
+      leftTime: n + ':' + s
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  prefixInteger(num, n) {
+    return (Array(n).join(0) + num).slice(-n);
   },
 
   /**

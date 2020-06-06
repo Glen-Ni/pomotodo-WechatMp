@@ -1,14 +1,14 @@
 <view class="container">
   <view class="tomato">
-      <g-clock text="点击开始番茄"></g-clock>
+      <g-clock text="{{leftTime}}"></g-clock>
     </view>
   <view>
     <g-button type="change" size="mini" text="暂停"></g-button>
   </view>
   <view>
-    <g-button type="change" size="mini" text="放弃"></g-button>
+    <g-button size="mini" text="放弃"></g-button>
   </view>
   <view>
-    <g-button size="mini" text="再来一组"></g-button>
+    <g-button  type="change" size="mini" text="再来一组"></g-button>
   </view>
 </view>
